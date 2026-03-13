@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.pyc
+tmp/
+server/uploads/
+server/audio_files/
+server/session_logs/
+models/

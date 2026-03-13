@@ -1,0 +1,77 @@
+project:
+  name: interruptible-voice-agent
+  description: Public showcase for an interruptible voice agent engineering prototype
+
+logging:
+  level: INFO
+
+selected_module:
+  Recorder: NullRecorder
+  ASR: StubASR
+  VAD: EnergyVAD
+  LLM: DummyLLM
+  TTS: SystemTTS
+  Player: NoopPlayer
+
+system:
+  allow_interruptions: true
+  system_prompt: >
+    You are a concise voice agent assistant. Answer directly and keep turns short enough
+    for spoken interaction. If the user changes direction mid-turn, accept the interruption.
+
+Recorder:
+  NullRecorder: {}
+  RecorderPyAudio:
+    channels: 1
+    sample_rate: 16000
+    chunk_size: 1024
+
+ASR:
+  StubASR:
+    stub_text: "This is a demo transcript from the stub ASR backend."
+  FunASR:
+    model_dir: "${FUNASR_MODEL_DIR:-models/SenseVoiceSmall}"
+    language: "zn"
+    use_itn: true
+    batch_size_s: 60
+
+VAD:
+  EnergyVAD:
+    threshold: 550.0
+  SileroVAD:
+    sampling_rate: 16000
+    threshold: 0.25
+    min_silence_duration_ms: 600
+
+LLM:
+  DummyLLM:
+    canned_response: >
+      This demo path keeps the repository runnable without external credentials.
+      Switch the selected LLM backend to OpenAIChatLLM or OllamaLLM to test a real provider.
+  OpenAIChatLLM:
+    model_name: "${OPENAI_MODEL:-gpt-4o-mini}"
+    api_key: "${OPENAI_API_KEY}"
+    base_url: "${OPENAI_BASE_URL:-https://api.openai.com/v1}"
+  OllamaLLM:
+    model_name: "${OLLAMA_MODEL:-llama3.1}"
+    base_url: "${OLLAMA_BASE_URL:-http://localhost:11434}"
+    timeout: 120
+
+TTS:
+  SystemTTS:
+    output_dir: "tmp/tts"
+    voice: "${SYSTEM_TTS_VOICE:-Samantha}"
+  EdgeTTS:
+    output_dir: "tmp/tts"
+    voice: "${EDGE_TTS_VOICE:-en-US-AvaNeural}"
+  GTTS:
+    output_dir: "tmp/tts"
+    lang: "en"
+
+Player:
+  NoopPlayer: {}
+  CommandPlayer: {}
+  PygameSoundPlayer: {}
+
+Memory:
+  dialogue_history_path: "tmp/dialogue"

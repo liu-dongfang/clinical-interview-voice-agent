@@ -1,0 +1,33 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="640" fill="#0F1726"/>
+  <circle cx="1112" cy="120" r="180" fill="#1F4FC5" fill-opacity="0.18"/>
+  <circle cx="152" cy="564" r="220" fill="#15725F" fill-opacity="0.14"/>
+  <text x="72" y="128" font-family="Menlo, monospace" font-size="26" fill="#7FA5FF">interruptible-voice-agent</text>
+  <text x="72" y="228" font-family="Menlo, monospace" font-size="64" fill="#F5F7FB">Modular Voice Agent</text>
+  <text x="72" y="300" font-family="Menlo, monospace" font-size="64" fill="#F5F7FB">with Interruptible Dialogue</text>
+  <text x="72" y="364" font-family="Menlo, monospace" font-size="28" fill="#AAB8D0">Pluggable ASR / LLM / TTS backends</text>
+  <text x="72" y="406" font-family="Menlo, monospace" font-size="28" fill="#AAB8D0">VAD-based turn-taking control</text>
+  <rect x="72" y="468" width="176" height="54" rx="14" fill="#1B2D4F" stroke="#2D68F5"/>
+  <text x="160" y="502" text-anchor="middle" font-family="Menlo, monospace" font-size="22" fill="#F5F7FB">voice-agent</text>
+  <rect x="266" y="468" width="110" height="54" rx="14" fill="#1B2D4F" stroke="#2D68F5"/>
+  <text x="321" y="502" text-anchor="middle" font-family="Menlo, monospace" font-size="22" fill="#F5F7FB">vad</text>
+  <rect x="394" y="468" width="110" height="54" rx="14" fill="#1B2D4F" stroke="#2D68F5"/>
+  <text x="449" y="502" text-anchor="middle" font-family="Menlo, monospace" font-size="22" fill="#F5F7FB">asr</text>
+  <rect x="522" y="468" width="110" height="54" rx="14" fill="#1B2D4F" stroke="#2D68F5"/>
+  <text x="577" y="502" text-anchor="middle" font-family="Menlo, monospace" font-size="22" fill="#F5F7FB">tts</text>
+  <rect x="650" y="468" width="110" height="54" rx="14" fill="#1B2D4F" stroke="#2D68F5"/>
+  <text x="705" y="502" text-anchor="middle" font-family="Menlo, monospace" font-size="22" fill="#F5F7FB">llm</text>
+  <rect x="808" y="126" width="368" height="368" rx="28" fill="#121D31" stroke="#2B3F64"/>
+  <rect x="848" y="168" width="132" height="54" rx="14" fill="#1E417D" stroke="#427FF5"/>
+  <text x="914" y="201" text-anchor="middle" font-family="Menlo, monospace" font-size="20" fill="#F5F7FB">Recorder</text>
+  <rect x="1008" y="168" width="132" height="54" rx="14" fill="#183F38" stroke="#2FA385"/>
+  <text x="1074" y="201" text-anchor="middle" font-family="Menlo, monospace" font-size="20" fill="#F5F7FB">VAD</text>
+  <rect x="928" y="258" width="132" height="54" rx="14" fill="#5A3C12" stroke="#D99A32"/>
+  <text x="994" y="291" text-anchor="middle" font-family="Menlo, monospace" font-size="20" fill="#F5F7FB">ASR</text>
+  <rect x="856" y="350" width="280" height="62" rx="18" fill="#243B66" stroke="#5E8CFF"/>
+  <text x="996" y="388" text-anchor="middle" font-family="Menlo, monospace" font-size="24" fill="#F5F7FB">VoiceAgent</text>
+  <path d="M980 222V255H996" stroke="#7FA5FF" stroke-width="4"/>
+  <path d="M996 320V350" stroke="#7FA5FF" stroke-width="4"/>
+  <path d="M1074 222V255H1040" stroke="#43C8A6" stroke-width="4" stroke-dasharray="10 8"/>
+  <text x="996" y="576" font-family="Menlo, monospace" font-size="22" text-anchor="middle" fill="#AAB8D0">engineering showcase, not a full research dump</text>
+</svg>

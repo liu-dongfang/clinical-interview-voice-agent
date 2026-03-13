@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interruptible Voice Agent Monitor</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --text: #16233a;
+      --muted: #68758d;
+      --border: #d5ddea;
+      --accent: #2158d5;
+      --warn: #c84a27;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "SF Mono", "Menlo", monospace;
+      background: radial-gradient(circle at top left, #eef4ff 0%, var(--bg) 50%, #edf1f7 100%);
+      color: var(--text);
+    }
+    header, main {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 48px 0 20px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 42px);
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 760px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 16px;
+      padding-bottom: 32px;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 20px 40px rgba(22, 35, 58, 0.06);
+    }
+    .kpi {
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 420px;
+    }
+    .event {
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: #fbfcff;
+    }
+    .event.interrupt {
+      border-left-color: var(--warn);
+    }
+    .event-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Interruptible Voice Agent Monitor</h1>
+    <p>
+      Minimal service-layer dashboard for observing messages, interruption events, and backend status updates
+      from the voice-agent pipeline.
+    </p>
+  </header>
+  <main class="grid">
+    <section class="panel">
+      <div>Health</div>
+      <div class="kpi" id="health-status">checking</div>
+      <p style="margin-top: 12px;">This page is intentionally small: it is meant to validate system wiring, not to be a product UI.</p>
+    </section>
+    <section class="panel">
+      <div class="timeline" id="timeline"></div>
+    </section>
+  </main>
+  <script>
+    const timeline = document.getElementById("timeline");
+    const healthStatus = document.getElementById("health-status");
+
+    function renderEvent(event) {
+      const item = document.createElement("article");
+      item.className = `event ${event.kind}`;
+      item.innerHTML = `
+        <div class="event-header">
+          <span>${event.kind}</span>
+          <span>${event.created_at}</span>
+        </div>
+        <pre>${JSON.stringify(event.payload, null, 2)}</pre>
+      `;
+      timeline.prepend(item);
+    }
+
+    async function bootstrap() {
+      const health = await fetch("/health").then((response) => response.json());
+      healthStatus.textContent = health.status;
+
+      const events = await fetch("/events").then((response) => response.json());
+      events.reverse().forEach(renderEvent);
+    }
+
+    bootstrap();
+
+    const socket = io();
+    socket.on("event", renderEvent);
+  </script>
+</body>
+</html>

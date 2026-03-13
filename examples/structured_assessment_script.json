@@ -1,0 +1,22 @@
+{
+  "name": "structured-assessment-demo",
+  "description": "Optional domain-specific example layered on top of the generic voice-agent runtime.",
+  "stages": [
+    {
+      "id": "intro",
+      "goal": "Introduce the interview and confirm the user is ready."
+    },
+    {
+      "id": "orientation",
+      "goal": "Ask a small number of structured orientation questions."
+    },
+    {
+      "id": "follow_up",
+      "goal": "Branch into a clarifying question if the prior answer is ambiguous."
+    },
+    {
+      "id": "close",
+      "goal": "Summarize the exchange and hand off to a downstream system."
+    }
+  ]
+}

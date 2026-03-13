@@ -1,0 +1,39 @@
+<svg width="1400" height="760" viewBox="0 0 1400 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="760" rx="32" fill="#F4F7FB"/>
+  <rect x="56" y="60" width="240" height="86" rx="20" fill="#DCE8FF" stroke="#2158D5" stroke-width="3"/>
+  <text x="176" y="112" text-anchor="middle" font-family="Menlo, monospace" font-size="30" fill="#16233A">Recorder</text>
+  <rect x="342" y="60" width="220" height="86" rx="20" fill="#E5F5F1" stroke="#15725F" stroke-width="3"/>
+  <text x="452" y="112" text-anchor="middle" font-family="Menlo, monospace" font-size="30" fill="#16233A">VAD</text>
+  <rect x="608" y="60" width="220" height="86" rx="20" fill="#FFF1DE" stroke="#C67A1B" stroke-width="3"/>
+  <text x="718" y="112" text-anchor="middle" font-family="Menlo, monospace" font-size="30" fill="#16233A">ASR</text>
+  <rect x="875" y="44" width="468" height="214" rx="24" fill="#FFFFFF" stroke="#2158D5" stroke-width="3"/>
+  <text x="1109" y="92" text-anchor="middle" font-family="Menlo, monospace" font-size="32" fill="#16233A">VoiceAgent Orchestrator</text>
+  <rect x="909" y="120" width="175" height="56" rx="14" fill="#EEF4FF"/>
+  <text x="997" y="155" text-anchor="middle" font-family="Menlo, monospace" font-size="20" fill="#16233A">Dialogue State</text>
+  <rect x="1097" y="120" width="210" height="56" rx="14" fill="#EEF4FF"/>
+  <text x="1202" y="155" text-anchor="middle" font-family="Menlo, monospace" font-size="20" fill="#16233A">Interrupt Controller</text>
+  <rect x="909" y="190" width="175" height="42" rx="12" fill="#F7F9FC"/>
+  <text x="997" y="216" text-anchor="middle" font-family="Menlo, monospace" font-size="18" fill="#4D5B73">Chunk Segmenter</text>
+  <rect x="1097" y="190" width="210" height="42" rx="12" fill="#F7F9FC"/>
+  <text x="1202" y="216" text-anchor="middle" font-family="Menlo, monospace" font-size="18" fill="#4D5B73">Backend Routing</text>
+  <rect x="160" y="328" width="220" height="86" rx="20" fill="#FFF1DE" stroke="#C67A1B" stroke-width="3"/>
+  <text x="270" y="380" text-anchor="middle" font-family="Menlo, monospace" font-size="30" fill="#16233A">LLM</text>
+  <rect x="450" y="328" width="220" height="86" rx="20" fill="#E5F5F1" stroke="#15725F" stroke-width="3"/>
+  <text x="560" y="380" text-anchor="middle" font-family="Menlo, monospace" font-size="30" fill="#16233A">TTS</text>
+  <rect x="740" y="328" width="240" height="86" rx="20" fill="#DCE8FF" stroke="#2158D5" stroke-width="3"/>
+  <text x="860" y="380" text-anchor="middle" font-family="Menlo, monospace" font-size="30" fill="#16233A">Player</text>
+  <rect x="1048" y="328" width="252" height="86" rx="20" fill="#FFFFFF" stroke="#7E8CA5" stroke-width="3"/>
+  <text x="1174" y="365" text-anchor="middle" font-family="Menlo, monospace" font-size="24" fill="#16233A">Service Layer</text>
+  <text x="1174" y="394" text-anchor="middle" font-family="Menlo, monospace" font-size="18" fill="#4D5B73">Flask + Socket.IO monitor</text>
+  <path d="M296 103H342" stroke="#2158D5" stroke-width="4"/>
+  <path d="M562 103H608" stroke="#2158D5" stroke-width="4"/>
+  <path d="M828 103H875" stroke="#2158D5" stroke-width="4"/>
+  <path d="M718 146V240H1109" stroke="#2158D5" stroke-width="4"/>
+  <path d="M1109 258V306H270V328" stroke="#2158D5" stroke-width="4"/>
+  <path d="M380 371H450" stroke="#2158D5" stroke-width="4"/>
+  <path d="M670 371H740" stroke="#2158D5" stroke-width="4"/>
+  <path d="M980 371H1048" stroke="#2158D5" stroke-width="4"/>
+  <path d="M452 146V240H1202" stroke="#C84A27" stroke-width="4" stroke-dasharray="14 10"/>
+  <path d="M1202 176V292H860V328" stroke="#C84A27" stroke-width="4" stroke-dasharray="14 10"/>
+  <text x="930" y="286" font-family="Menlo, monospace" font-size="19" fill="#C84A27">VAD triggers interruption while playback is active</text>
+</svg>
