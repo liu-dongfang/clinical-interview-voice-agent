@@ -1,0 +1,53 @@
+<svg width="763" height="691" viewBox="0 0 763 691" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="763" height="691" fill="#F5F5F5"/>
+  <rect x="0.5" y="0.5" width="762" height="690" stroke="#D9D9D9"/>
+
+  <text x="15" y="28" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#111111">assistant:</text>
+  <text x="93" y="28" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#222222">您提到有特别的低落或烦躁，能具体描述一下，例如通常会怎么样的低落或烦躁吗？</text>
+
+  <text x="15" y="71" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#2E8B57">user:</text>
+  <text x="91" y="71" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#2E8B57">就是有的时候压力比较大的时候会有吧。</text>
+
+  <text x="15" y="114" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#111111">assistant:</text>
+  <text x="93" y="114" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#222222">谢谢分享。接着，您平时喜欢做些什么事情？最近一段时间，您对这些事情的兴趣还有多少呢？</text>
+
+  <text x="15" y="157" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#2E8B57">user:</text>
+  <text x="91" y="157" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#2E8B57">喜欢画画还是挺有兴趣的吧。</text>
+
+  <text x="15" y="200" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#111111">assistant:</text>
+  <text x="93" y="200" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#222222">您提到喜欢画画，并且“挺有兴趣的”。相比之前，您对画画的兴趣是增加了、减少了，还是没有什么变化呢？</text>
+
+  <text x="15" y="243" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#2E8B57">user:</text>
+  <text x="91" y="243" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#2E8B57">没有什么变化。</text>
+
+  <text x="15" y="286" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#111111">assistant:</text>
+  <text x="93" y="286" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#222222">谢谢您的回答。下面，关于睡眠，您最近的情况怎么样？有没有入睡困难、睡眠不深或者早醒的情况？</text>
+
+  <text x="15" y="329" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#2E8B57">user:</text>
+  <text x="91" y="329" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#2E8B57">睡眠也挺好的。</text>
+
+  <text x="15" y="372" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#111111">assistant:</text>
+  <text x="93" y="372" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#222222">谢谢您的回答。下面，您最近有没有觉得做什么事情都提不起劲，或者感到特别疲惫？</text>
+
+  <text x="15" y="415" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#2E8B57">user:</text>
+  <text x="91" y="415" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#2E8B57">也没有这种感觉。</text>
+  <text x="200" y="415" font-family="Apple Color Emoji, sans-serif" font-size="16" fill="#2E8B57">😊</text>
+
+  <text x="15" y="458" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#111111">assistant:</text>
+  <text x="93" y="458" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#222222">好的，接下来我想了解，最近您的食欲怎么样？体重有没有什么明显的变化？</text>
+
+  <text x="15" y="501" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#2E8B57">user:</text>
+  <text x="91" y="501" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#2E8B57">食欲也挺好的，吃胖了。</text>
+
+  <text x="15" y="544" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#111111">assistant:</text>
+  <text x="93" y="544" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#222222">您提到“吃胖了”，能具体说一下，您最近的体重增加了多少吗？</text>
+
+  <text x="15" y="587" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#2E8B57">user:</text>
+  <text x="91" y="587" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#2E8B57">加了差不多5斤吧。</text>
+
+  <text x="15" y="630" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#111111">assistant:</text>
+  <text x="93" y="630" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#222222">嗯，让我们继续。您最近对自己的看法如何？觉得自己是个什么样的人？</text>
+
+  <text x="15" y="673" font-family="SF Mono, Menlo, monospace" font-size="16" fill="#2E8B57">user:</text>
+  <text x="91" y="673" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16" fill="#2E8B57">没什么特别的看法。</text>
+</svg>

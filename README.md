@@ -35,6 +35,14 @@ At a high level:
 4. `VoiceAgent` maintains dialogue state and streams the request through the selected LLM backend
 5. output text is segmented for TTS, synthesized incrementally, and sent to the selected player backend
 
+## Application Snapshot
+
+One downstream integration wrapped the backend into a mobile-style app shell to validate registration and live interview flows. The two screenshots below are included as UI-facing examples, not as the main identity of the repository.
+
+![App registration screen](assets/app-registration-screen.svg)
+
+![Live interview screen](assets/app-live-interview-screen.svg)
+
 ## What I Built / My Contributions
 
 - Reframed the original research codebase into a smaller public showcase that highlights architecture instead of domain-specific workflow.
