@@ -1,10 +1,10 @@
 # clinical-interview-voice-agent
 
-Modular voice agent prototype with interruptible dialogue flow, pluggable ASR/LLM/TTS backends, and VAD-based turn-taking control.
+A voice agent prototype for structured clinical interviewing, with VAD-based interruption handling, modular ASR/LLM/TTS backends, and dialogue workflow control.
 
 ## Project Overview
 
-`clinical-interview-voice-agent` is a public-facing engineering showcase derived from the original `bailing-main_01` research prototype.
+`clinical-interview-voice-agent` is a public-facing engineering showcase derived from a larger research prototype for structured clinical interviewing. This public version focuses on the reusable speech-agent architecture, interruption-aware dialogue control, backend abstraction, and service integration, while keeping domain-specific assessment assets minimal and synthetic.
 
 The repository focuses on the reusable parts of the system:
 - a modular speech pipeline
