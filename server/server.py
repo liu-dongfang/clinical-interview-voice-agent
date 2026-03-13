@@ -5,7 +5,7 @@ from flask_socketio import SocketIO
 
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "interruptible-voice-agent"
+app.config["SECRET_KEY"] = "clinical-interview-voice-agent"
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 EVENT_LIMIT = 200

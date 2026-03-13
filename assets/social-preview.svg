@@ -2,7 +2,7 @@
   <rect width="1280" height="640" fill="#0F1726"/>
   <circle cx="1112" cy="120" r="180" fill="#1F4FC5" fill-opacity="0.18"/>
   <circle cx="152" cy="564" r="220" fill="#15725F" fill-opacity="0.14"/>
-  <text x="72" y="128" font-family="Menlo, monospace" font-size="26" fill="#7FA5FF">interruptible-voice-agent</text>
+  <text x="72" y="128" font-family="Menlo, monospace" font-size="24" fill="#7FA5FF">clinical-interview-voice-agent</text>
   <text x="72" y="228" font-family="Menlo, monospace" font-size="64" fill="#F5F7FB">Modular Voice Agent</text>
   <text x="72" y="300" font-family="Menlo, monospace" font-size="64" fill="#F5F7FB">with Interruptible Dialogue</text>
   <text x="72" y="364" font-family="Menlo, monospace" font-size="28" fill="#AAB8D0">Pluggable ASR / LLM / TTS backends</text>

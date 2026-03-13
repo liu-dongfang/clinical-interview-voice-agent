@@ -1,5 +1,5 @@
 project:
-  name: interruptible-voice-agent
+  name: clinical-interview-voice-agent
   description: Public showcase for an interruptible voice agent engineering prototype
 
 logging:

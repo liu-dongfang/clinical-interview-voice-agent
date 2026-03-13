@@ -1,10 +1,10 @@
-# interruptible-voice-agent
+# clinical-interview-voice-agent
 
 Modular voice agent prototype with interruptible dialogue flow, pluggable ASR/LLM/TTS backends, and VAD-based turn-taking control.
 
 ## Project Overview
 
-`interruptible-voice-agent` is a public-facing engineering showcase derived from the original `bailing-main_01` research prototype.
+`clinical-interview-voice-agent` is a public-facing engineering showcase derived from the original `bailing-main_01` research prototype.
 
 The repository focuses on the reusable parts of the system:
 - a modular speech pipeline
