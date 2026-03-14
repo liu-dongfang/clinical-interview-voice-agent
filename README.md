@@ -1,55 +1,56 @@
 # clinical-interview-voice-agent
 
-A voice agent prototype for structured clinical interviewing, with VAD-based interruption handling, modular ASR/LLM/TTS backends, and dialogue workflow control.
+An interruption-aware voice agent for structured clinical interviewing, designed as a public showcase of reusable speech-agent infrastructure.
 
-## Project Overview
+![Live interview interface](assets/readme/live-interview.png)
 
-`clinical-interview-voice-agent` is a public-facing engineering showcase derived from a larger research prototype for structured clinical interviewing. This public version focuses on the reusable speech-agent architecture, interruption-aware dialogue control, backend abstraction, and service integration, while keeping domain-specific assessment assets minimal and synthetic.
+This repository highlights:
+- Voice interview UX with a downstream app shell for registration and live interviewing
+- Swappable STT / LLM / TTS / VAD / playback backends behind one orchestrator
+- Interruption-aware control flow that can stop playback when new user speech is detected
 
-The repository focuses on the reusable parts of the system:
-- a modular speech pipeline
-- interruption-aware dialogue control
-- backend abstraction for ASR, LLM, TTS, and audio playback
-- a thin service layer for integration and monitoring
+**Demo:** [Watch 55s legacy mobile demo](docs/demo/voice-mobile-demo-55s.mp4) · [Read architecture notes](docs/architecture.md) · [Open live interface screenshot](assets/readme/live-interview.png)
 
-The original structured assessment workflow is kept only as an optional application example in [examples/domain_demo.md](examples/domain_demo.md) and [examples/structured_assessment_script.json](examples/structured_assessment_script.json).
+## Overview
 
-## Core Capabilities
+`clinical-interview-voice-agent` is the public-facing engineering subset of a larger research prototype for structured clinical interviewing. This repository focuses on the reusable speech stack: audio input, VAD-based interruption handling, ASR / LLM / TTS backend abstraction, dialogue orchestration, and a thin service layer for UI integration.
 
-- VAD-driven interruption handling: the orchestrator can stop active playback when new user speech is detected.
-- Modular pipeline boundaries: recorder, VAD, ASR, dialogue control, LLM, TTS, and player are instantiated independently from config.
-- Pluggable backends: the showcase includes interchangeable backends for `ASR`, `LLM`, `TTS`, `VAD`, and playback.
-- Streaming-friendly reply path: LLM output is segmented into speakable chunks before synthesis and playback.
-- Service integration: a small Flask-SocketIO monitor exposes timeline events for messages, interruptions, and backend status.
+The linked demo is a lightweight legacy mobile walkthrough. The screenshots below represent the cleaner app shell used to present the same backend capabilities as a product-facing showcase.
 
-## System Architecture
+## Interface
 
-The system is documented in [docs/architecture.md](docs/architecture.md).
+| Registration | Live interview |
+| --- | --- |
+| ![Registration screen](assets/readme/registration.png) | ![Live interview screen](assets/readme/live-interview.png) |
 
-![Architecture Overview](assets/architecture-overview.svg)
+- The registration surface shows how user intake and configuration can be wrapped around the voice backend.
+- The live interview view demonstrates a more inspectable product layer than raw logs or terminal output.
+- Together they frame the system as reusable AI application infrastructure, not just a backend demo.
+
+## Speech Flow
+
+![Voice flow](assets/readme/voice-flow.png)
 
 At a high level:
-1. audio enters through a recorder or browser bridge
-2. VAD decides whether user speech is active and whether an interruption should be triggered
-3. ASR converts finalized user audio into text
-4. `VoiceAgent` maintains dialogue state and streams the request through the selected LLM backend
-5. output text is segmented for TTS, synthesized incrementally, and sent to the selected player backend
+1. Audio enters through a recorder or browser bridge.
+2. VAD decides whether speech is active and whether playback should be interrupted.
+3. ASR converts finalized user audio into text for the orchestrator.
+4. [`bailing/voice_agent.py`](bailing/voice_agent.py) maintains dialogue state and streams requests through the selected LLM backend.
+5. Output text is segmented, synthesized incrementally, and sent to the selected playback backend.
 
-## Application Snapshot
+## What This Repository Demonstrates
 
-One downstream integration wrapped the backend into a mobile-style app shell to validate registration and live interview flows. The two screenshots below are included as UI-facing examples, not as the main identity of the repository.
+- Interruption-aware dialogue control instead of rigid turn-taking
+- Clear backend boundaries across recorder, VAD, ASR, LLM, TTS, and playback
+- A small service bridge in [`server/server.py`](server/server.py) for timeline inspection and UI integration
+- Config-driven backend swapping through [`config/config.yaml`](config/config.yaml)
 
-![App registration screen](assets/app-registration-screen.svg)
+## What I Built
 
-![Live interview screen](assets/app-live-interview-screen.svg)
-
-## What I Built / My Contributions
-
-- Reframed the original research codebase into a smaller public showcase that highlights architecture instead of domain-specific workflow.
-- Preserved the core speech-agent composition model while removing internal materials, local artifacts, private config, and hard-coded credentials.
-- Reworked the primary path around a cleaner `VoiceAgent` orchestrator in [bailing/voice_agent.py](bailing/voice_agent.py).
-- Kept interruption logic as a first-class engineering concern rather than a demo-only behavior.
-- Added a minimal monitoring server in [server/server.py](server/server.py) to show how the engine can plug into a UI or system integration layer.
+- Reframed the original research codebase into a smaller public showcase centered on the reusable voice engine
+- Preserved interruption handling as a first-class system behavior rather than a demo-only feature
+- Reworked the main execution path around a cleaner orchestrator in [`bailing/voice_agent.py`](bailing/voice_agent.py)
+- Packaged the backend with screenshots, docs, and a minimal monitor so reviewers can understand both system design and product surface
 
 ## Quickstart
 
@@ -63,28 +64,19 @@ python main.py --config config/config.yaml --no-speak
 
 Notes:
 - The default config is safe for inspection and uses `DummyLLM` plus `NoopPlayer`.
-- To test a real hosted model, switch `selected_module.LLM` in [config/config.yaml](config/config.yaml) to `OpenAIChatLLM`.
-- To test a local model, switch it to `OllamaLLM`.
-- To enable audio playback, remove `--no-speak` and choose `CommandPlayer` or `PygameSoundPlayer`.
+- Switch `selected_module.LLM` in [config/config.yaml](config/config.yaml) to `OpenAIChatLLM` or `OllamaLLM` if you want a different backend.
+- Remove `--no-speak` and choose an active player backend when you want to test playback.
 
 ## Start Here
 
-- Read [docs/architecture.md](docs/architecture.md) for the design overview.
-- Open [bailing/voice_agent.py](bailing/voice_agent.py) for the core orchestration path.
-- Check [config/config.yaml](config/config.yaml) to see how backend swapping is wired.
-- Inspect [server/server.py](server/server.py) for the minimal service bridge.
-- Review [examples/domain_demo.md](examples/domain_demo.md) if you want to see how a domain-specific interview flow can sit on top of the generic engine.
+- [docs/architecture.md](docs/architecture.md)
+- [bailing/voice_agent.py](bailing/voice_agent.py)
+- [config/config.yaml](config/config.yaml)
+- [server/server.py](server/server.py)
+- [examples/domain_demo.md](examples/domain_demo.md)
 
 ## Limitations
 
 - This is still an engineering prototype, not a production-ready realtime speech stack.
-- The default runner demonstrates orchestration and backend boundaries more than end-to-end voice UX.
-- Interruption quality depends heavily on VAD thresholds, audio device behavior, and backend latency.
-- No performance claims are made here beyond the implemented control flow and backend interfaces.
+- Interruption quality depends on VAD thresholds, audio device behavior, and backend latency.
 - The repository intentionally excludes large model weights, internal prompts, logs, certificates, and unpublished research materials.
-
-## Collaboration
-
-I am interested in collaboration around voice agents, speech interface architecture, interruption handling, and practical LLM system integration.
-
-If you want to discuss architecture tradeoffs, extend the backend interfaces, or adapt this stack to a different domain, open an issue or reach out with a concrete use case.
