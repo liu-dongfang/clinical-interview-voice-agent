@@ -57,10 +57,10 @@
   </text>
 
   <rect x="84" y="522" width="218" height="60" rx="20" fill="#13294B" stroke="#4D7EDC" stroke-width="1.5"/>
-  <text x="193" y="560" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" fill="#F5F8FF">HAMD / HAMA / MINI</text>
+  <text x="193" y="559" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="600" fill="#F5F8FF">HAMD / HAMA / MINI</text>
 
   <rect x="318" y="522" width="252" height="60" rx="20" fill="#14332D" stroke="#2F9D7E" stroke-width="1.5"/>
-  <text x="444" y="560" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" fill="#F5F8FF">dual-agent follow-up</text>
+  <text x="444" y="559" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="600" fill="#F5F8FF">dual-agent follow-up</text>
 
   <rect x="84" y="600" width="232" height="60" rx="20" fill="#352717" stroke="#C18D45" stroke-width="1.5"/>
   <text x="200" y="638" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" fill="#F5F8FF">structured records</text>
@@ -88,14 +88,14 @@
   <rect x="1018" y="206" width="68" height="8" rx="4" fill="#74DBBA"/>
   <rect x="1000" y="228" width="84" height="8" rx="4" fill="#38695F"/>
   <text x="1000" y="262" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" fill="#F5F8FF">Scales</text>
-  <text x="1000" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" fill="#D0EFE3">HAMD / HAMA / MINI</text>
+  <text x="1000" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#D0EFE3">HAMD / HAMA / MINI</text>
 
   <rect x="1140" y="182" width="150" height="108" rx="24" fill="#352717" stroke="#C08B43" stroke-width="2"/>
   <circle cx="1176" cy="214" r="10" fill="#F0BF72"/>
   <rect x="1194" y="206" width="70" height="8" rx="4" fill="#F0BF72"/>
   <rect x="1176" y="228" width="86" height="8" rx="4" fill="#7B5C33"/>
   <text x="1176" y="262" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" fill="#F5F8FF">Questions</text>
-  <text x="1176" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" fill="#F0DEC3">local JSON plan</text>
+  <text x="1176" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" fill="#F0DEC3">local JSON plan</text>
 
   <path d="M863 290V328H1215V290" stroke="url(#connector)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
   <circle cx="1039" cy="328" r="8" fill="#86B3FF"/>
@@ -106,11 +106,13 @@
 
   <rect x="830" y="430" width="182" height="108" rx="24" fill="#17345F" stroke="#5A90F8" stroke-width="2"/>
   <text x="860" y="468" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#F5F8FF">Interviewer</text>
-  <text x="860" y="495" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#D1E0FF">asks the next best turn</text>
+  <text x="860" y="493" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" fill="#D1E0FF">next-best</text>
+  <text x="860" y="516" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" fill="#D1E0FF">question turn</text>
 
   <rect x="1064" y="430" width="182" height="108" rx="24" fill="#173A32" stroke="#48BA97" stroke-width="2"/>
   <text x="1094" y="468" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#F5F8FF">Evaluator</text>
-  <text x="1094" y="495" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#D8EFE6">checks answer sufficiency</text>
+  <text x="1094" y="493" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" fill="#D8EFE6">answer</text>
+  <text x="1094" y="516" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" fill="#D8EFE6">sufficiency</text>
 
   <path d="M1012 484H1064" stroke="#7BE0C0" stroke-width="4" stroke-linecap="round"/>
   <path d="M1046 470L1062 484L1046 498" stroke="#7BE0C0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -130,5 +132,5 @@
 
   <rect x="1070" y="654" width="210" height="70" rx="24" fill="#352717" stroke="#C08B43" stroke-width="2"/>
   <text x="1100" y="689" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#F5F8FF">Structured Output</text>
-  <text x="1100" y="709" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="15" fill="#F0DFC4">schema-aligned record</text>
+  <text x="1100" y="709" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="13" fill="#F0DFC4">schema-aligned record</text>
 </svg>
