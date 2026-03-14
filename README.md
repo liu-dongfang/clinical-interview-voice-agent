@@ -1,19 +1,21 @@
 # clinical-interview-voice-agent
 
-An interruption-aware voice agent for structured clinical interviewing, designed as a public showcase of reusable speech-agent infrastructure.
+Public showcase of a scale-driven AI interviewer for structured mental-health assessments, combining dual-agent interview design with an interruption-aware voice runtime.
 
-![Live interview interface](assets/readme/live-interview.png)
+![Repository hero](assets/readme/repo-hero.svg)
 
 This repository highlights:
-- Voice interview UX with a downstream app shell for registration and live interviewing
-- Swappable STT / LLM / TTS / VAD / playback backends behind one orchestrator
-- Interruption-aware control flow that can stop playback when new user speech is detected
+- Patient intake / history -> scale selection -> JSON-backed question sequencing
+- Dual-agent orchestration between the interviewing agent and an answer-sufficiency evaluator
+- Interruption-aware voice runtime with swappable STT / LLM / TTS / VAD / playback backends
 
-**Demo:** [Watch 55s legacy mobile demo](docs/demo/voice-mobile-demo-55s.mp4) · [Read architecture notes](docs/architecture.md) · [Open live interface screenshot](assets/readme/live-interview.png)
+**Demo:** [Watch 55s legacy mobile demo](docs/demo/voice-mobile-demo-55s.mp4) · [Read architecture notes](docs/architecture.md) · [See interface screenshots](#interface)
 
 ## Overview
 
-`clinical-interview-voice-agent` is the public-facing engineering subset of a larger research prototype for structured clinical interviewing. This repository focuses on the reusable speech stack: audio input, VAD-based interruption handling, ASR / LLM / TTS backend abstraction, dialogue orchestration, and a thin service layer for UI integration.
+`clinical-interview-voice-agent` is the public-facing engineering slice of a larger structured interview prototype. The core workflow represented here is a scale-driven mental-health interview system: patient intake and history collection, assessment selection, question sequencing from local JSON definitions, and dual-agent coordination between asking questions and judging whether an answer is sufficient.
+
+To keep the demo runnable end to end, the repository also includes the surrounding speech stack: audio input, VAD-based interruption handling, ASR / LLM / TTS backend abstraction, dialogue orchestration, and a thin service layer for UI integration.
 
 The linked demo is a lightweight legacy mobile walkthrough. The screenshots below represent the cleaner app shell used to present the same backend capabilities as a product-facing showcase.
 
@@ -25,7 +27,7 @@ The linked demo is a lightweight legacy mobile walkthrough. The screenshots belo
 
 - The registration surface shows how user intake and configuration can be wrapped around the voice backend.
 - The live interview view demonstrates a more inspectable product layer than raw logs or terminal output.
-- Together they frame the system as reusable AI application infrastructure, not just a backend demo.
+- Together they show how the interview engine can be presented in a product shell, rather than only through logs or terminal output.
 
 ## Speech Flow
 
@@ -40,17 +42,19 @@ At a high level:
 
 ## What This Repository Demonstrates
 
+- HAMD / HAMA / MINI-style structured interview flow design
+- Local JSON-driven question sequencing and sufficiency-aware follow-up
 - Interruption-aware dialogue control instead of rigid turn-taking
 - Clear backend boundaries across recorder, VAD, ASR, LLM, TTS, and playback
 - A small service bridge in [`server/server.py`](server/server.py) for timeline inspection and UI integration
-- Config-driven backend swapping through [`config/config.yaml`](config/config.yaml)
 
-## What I Built
+## What I Owned
 
-- Reframed the original research codebase into a smaller public showcase centered on the reusable voice engine
-- Preserved interruption handling as a first-class system behavior rather than a demo-only feature
-- Reworked the main execution path around a cleaner orchestrator in [`bailing/voice_agent.py`](bailing/voice_agent.py)
-- Packaged the backend with screenshots, docs, and a minimal monitor so reviewers can understand both system design and product surface
+- Agent design for a scale-driven mental-health interviewer covering patient intake / history, assessment selection, and question sequencing
+- Dual-agent workflow in which one agent conducts the interview and another evaluates answer sufficiency before the system advances
+- Follow-up strategy for incomplete answers, so the interviewer probes when needed instead of only moving linearly through a script
+- Schema-aligned structured outputs that can support downstream scoring, reporting, and replay-based evaluation
+- The repository also contains speech, app-shell, and integration code required to run the public demo; those pieces are included for completeness but were not my primary implementation ownership
 
 ## Quickstart
 

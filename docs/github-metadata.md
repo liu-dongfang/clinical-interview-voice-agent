@@ -4,7 +4,7 @@ Use the following repository metadata when publishing this project:
 
 ## About
 
-Voice agent prototype for structured clinical interviewing, with VAD-based interruption handling, modular ASR/LLM/TTS backends, and dialogue workflow control.
+Scale-driven AI interviewer for HAMD / HAMA / MINI-style assessments, with dual-agent orchestration, sufficiency-aware follow-up, and an interruption-aware voice runtime.
 
 ## Topics
 

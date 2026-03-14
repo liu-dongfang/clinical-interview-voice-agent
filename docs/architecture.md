@@ -1,6 +1,6 @@
 # Architecture
 
-This repository is intentionally smaller than the original research codebase. The goal here is to expose the reusable engineering structure of the voice agent rather than preserve every experiment and domain workflow.
+This repository is intentionally smaller than the original research codebase. The goal here is to expose the core runtime architecture and the structured interview workflow without preserving every internal experiment or unpublished domain asset.
 
 ## Runtime Graph
 
@@ -150,6 +150,6 @@ This keeps the repository focused on the voice-agent runtime while still showing
 
 ## Domain-Specific Example
 
-The original codebase used structured interview and assessment flows as one application of the engine. In this showcase that domain is intentionally de-emphasized.
+Structured interview and assessment flows were a core application of the original system. In this showcase, that domain layer is represented in a lighter-weight form so the agent workflow is visible without publishing internal prompts, datasets, or research artifacts.
 
-The optional example in [examples/domain_demo.md](../examples/domain_demo.md) demonstrates how a scripted workflow can sit on top of the core voice-agent architecture without redefining the lower-level audio, dialogue, or backend abstractions.
+The optional example in [examples/domain_demo.md](../examples/domain_demo.md) demonstrates how a scripted assessment workflow can sit on top of the core voice-agent architecture without redefining the lower-level audio, dialogue, or backend abstractions.

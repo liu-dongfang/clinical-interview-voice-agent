@@ -1,0 +1,147 @@
+<svg width="1400" height="860" viewBox="0 0 1400 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="54" x2="1260" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C162A"/>
+      <stop offset="0.56" stop-color="#10203A"/>
+      <stop offset="1" stop-color="#162A49"/>
+    </linearGradient>
+    <radialGradient id="glowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 112) rotate(135) scale(480 360)">
+      <stop stop-color="#3E7BFF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#3E7BFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowMint" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(194 782) rotate(-28) scale(420 240)">
+      <stop stop-color="#39C6A4" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#39C6A4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="panelStroke" x1="730" y1="104" x2="1312" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4C73B8"/>
+      <stop offset="1" stop-color="#2A436D"/>
+    </linearGradient>
+    <linearGradient id="connector" x1="958" y1="260" x2="1096" y2="621" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EA2FF"/>
+      <stop offset="1" stop-color="#7BE5C0"/>
+    </linearGradient>
+    <filter id="shadow" x="698" y="80" width="648" height="688" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="16"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0109 0 0 0 0 0.0416 0 0 0 0 0.1041 0 0 0 0.24 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+    <filter id="soft" x="0" y="0" width="1400" height="860" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="36"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="860" rx="36" fill="url(#bg)"/>
+  <circle cx="1180" cy="112" r="280" fill="url(#glowBlue)" filter="url(#soft)"/>
+  <circle cx="194" cy="782" r="220" fill="url(#glowMint)" filter="url(#soft)"/>
+
+  <g opacity="0.18">
+    <path d="M756 0V860" stroke="#7EA3E6"/>
+    <path d="M856 0V860" stroke="#7EA3E6"/>
+    <path d="M956 0V860" stroke="#7EA3E6"/>
+    <path d="M1056 0V860" stroke="#7EA3E6"/>
+    <path d="M1156 0V860" stroke="#7EA3E6"/>
+    <path d="M1256 0V860" stroke="#7EA3E6"/>
+    <path d="M0 134H1400" stroke="#7EA3E6"/>
+    <path d="M0 234H1400" stroke="#7EA3E6"/>
+    <path d="M0 334H1400" stroke="#7EA3E6"/>
+    <path d="M0 434H1400" stroke="#7EA3E6"/>
+    <path d="M0 534H1400" stroke="#7EA3E6"/>
+    <path d="M0 634H1400" stroke="#7EA3E6"/>
+    <path d="M0 734H1400" stroke="#7EA3E6"/>
+  </g>
+
+  <rect x="76" y="76" width="206" height="48" rx="24" fill="#152B4C" stroke="#3866B6"/>
+  <text x="179" y="107" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="21" fill="#9BC0FF">PUBLIC SHOWCASE</text>
+
+  <text x="76" y="214" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="74" font-weight="700" fill="#F5F8FF">
+    <tspan x="76" dy="0">Scale-Driven Clinical</tspan>
+    <tspan x="76" dy="84">Interview Agent</tspan>
+  </text>
+
+  <text x="78" y="386" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="26" fill="#BECAE1">
+    <tspan x="78" dy="0">HAMD / HAMA / MINI workflows with dual-agent question control,</tspan>
+    <tspan x="78" dy="38">sufficiency-aware follow-up, and structured records.</tspan>
+  </text>
+
+  <rect x="78" y="474" width="256" height="60" rx="20" fill="#152846" stroke="#3B6BBE"/>
+  <text x="206" y="512" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="22" fill="#F5F8FF">patient intake -&gt; scales</text>
+
+  <rect x="350" y="474" width="252" height="60" rx="20" fill="#14332E" stroke="#27896F"/>
+  <text x="476" y="512" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="22" fill="#F5F8FF">interviewer + evaluator</text>
+
+  <rect x="78" y="548" width="286" height="60" rx="20" fill="#3B2A17" stroke="#B6843B"/>
+  <text x="221" y="586" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="22" fill="#F5F8FF">structured output schema</text>
+
+  <text x="78" y="704" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="21" fill="#8FB8FF">agent design  .  follow-up policy  .  score-ready records</text>
+
+  <g filter="url(#shadow)">
+    <rect x="722" y="94" width="602" height="642" rx="32" fill="#101B31" fill-opacity="0.84" stroke="url(#panelStroke)" stroke-width="2"/>
+  </g>
+
+  <text x="770" y="144" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="20" fill="#7EA3E6">SYSTEM SNAPSHOT</text>
+  <text x="1178" y="144" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="18" text-anchor="end" fill="#77DAB9">public repo slice</text>
+
+  <rect x="760" y="174" width="156" height="104" rx="22" fill="#13294B" stroke="#4B7DDA" stroke-width="2"/>
+  <circle cx="792" cy="206" r="10" fill="#7FA7FF"/>
+  <rect x="808" y="198" width="68" height="8" rx="4" fill="#7FA7FF"/>
+  <rect x="792" y="222" width="90" height="8" rx="4" fill="#3D5E96"/>
+  <text x="792" y="258" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#F5F8FF">Patient Intake</text>
+
+  <rect x="944" y="174" width="156" height="104" rx="22" fill="#14322C" stroke="#2C9779" stroke-width="2"/>
+  <circle cx="976" cy="206" r="10" fill="#69D8B6"/>
+  <rect x="992" y="198" width="64" height="8" rx="4" fill="#69D8B6"/>
+  <rect x="976" y="222" width="96" height="8" rx="4" fill="#37695E"/>
+  <text x="976" y="258" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#F5F8FF">Scale Path</text>
+
+  <rect x="1128" y="174" width="156" height="104" rx="22" fill="#3B2818" stroke="#C18B3F" stroke-width="2"/>
+  <circle cx="1160" cy="206" r="10" fill="#F0BE6B"/>
+  <rect x="1176" y="198" width="62" height="8" rx="4" fill="#F0BE6B"/>
+  <rect x="1160" y="222" width="92" height="8" rx="4" fill="#7F5D2C"/>
+  <text x="1160" y="258" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#F5F8FF">Question Plan</text>
+
+  <path d="M838 278V314" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1022 278V314" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1206 278V314" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M838 314H1206" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="1022" cy="314" r="8" fill="#7DAEF8"/>
+
+  <rect x="780" y="336" width="486" height="214" rx="26" fill="#111F39" stroke="#4A73BC" stroke-width="2"/>
+  <text x="816" y="378" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="20" fill="#9BC0FF">DUAL-AGENT ORCHESTRATION</text>
+
+  <rect x="814" y="402" width="196" height="104" rx="22" fill="#16345F" stroke="#5A8FF7" stroke-width="2"/>
+  <text x="844" y="440" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="26" font-weight="600" fill="#F5F8FF">Interviewer</text>
+  <text x="844" y="474" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="18" fill="#C1D6FF">next best question</text>
+
+  <rect x="1036" y="402" width="196" height="104" rx="22" fill="#163830" stroke="#46B795" stroke-width="2"/>
+  <text x="1066" y="440" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="26" font-weight="600" fill="#F5F8FF">Evaluator</text>
+  <text x="1066" y="474" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="18" fill="#C8EBDD">answer sufficiency</text>
+
+  <path d="M1010 454H1036" stroke="#7AD6B6" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1024 444L1038 454L1024 464" stroke="#7AD6B6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="922" y="518" width="190" height="20" rx="10" fill="#172A4C"/>
+  <text x="1017" y="532" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="13" fill="#A8C6FF">probe more  /  advance  /  close</text>
+
+  <path d="M1022 550V580" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="1022" cy="580" r="8" fill="#7DAEF8"/>
+  <path d="M862 580H1180" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M862 580V598" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1180 580V598" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="780" y="612" width="212" height="92" rx="22" fill="#172D4F" stroke="#4C7CDD" stroke-width="2"/>
+  <text x="812" y="648" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="24" font-weight="600" fill="#F5F8FF">Voice Runtime</text>
+  <text x="812" y="674" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="15" fill="#BFD2F4">VAD / ASR / TTS</text>
+  <path d="M812 690C820 690 820 662 828 662C836 662 836 702 844 702C852 702 852 676 860 676C868 676 868 694 876 694C884 694 884 686 892 686C900 686 900 698 908 698C916 698 916 680 924 680C932 680 932 690 940 690" stroke="#8CB3FF" stroke-width="3" stroke-linecap="round"/>
+
+  <rect x="1012" y="612" width="254" height="92" rx="22" fill="#2F261A" stroke="#C79247" stroke-width="2"/>
+  <text x="1044" y="648" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="24" font-weight="600" fill="#F5F8FF">Structured Output</text>
+  <text x="1044" y="674" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="14" fill="#F3DDBA">score-ready schema</text>
+  <rect x="1164" y="632" width="72" height="18" rx="9" fill="#3F301D"/>
+  <rect x="1044" y="688" width="124" height="6" rx="3" fill="#D6B077"/>
+  <rect x="1174" y="688" width="48" height="6" rx="3" fill="#8F6A39"/>
+
+</svg>
