@@ -2,7 +2,7 @@
 
 Public showcase of a scale-driven AI interviewer for structured mental-health assessments, combining dual-agent interview design with an interruption-aware voice runtime.
 
-![Repository hero](assets/readme/repo-hero.svg)
+![Repository hero](assets/readme/repo-hero-cover.png)
 
 This repository highlights:
 - Patient intake / history -> scale selection -> JSON-backed question sequencing
