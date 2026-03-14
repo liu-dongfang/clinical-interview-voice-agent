@@ -1,147 +1,134 @@
 <svg width="1400" height="860" viewBox="0 0 1400 860" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bg" x1="88" y1="54" x2="1260" y2="860" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0C162A"/>
-      <stop offset="0.56" stop-color="#10203A"/>
-      <stop offset="1" stop-color="#162A49"/>
+    <linearGradient id="bg" x1="112" y1="48" x2="1248" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1424"/>
+      <stop offset="0.58" stop-color="#102038"/>
+      <stop offset="1" stop-color="#173158"/>
     </linearGradient>
-    <radialGradient id="glowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 112) rotate(135) scale(480 360)">
-      <stop stop-color="#3E7BFF" stop-opacity="0.34"/>
-      <stop offset="1" stop-color="#3E7BFF" stop-opacity="0"/>
+    <radialGradient id="blueGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1188 108) rotate(132) scale(420 320)">
+      <stop stop-color="#4E85FF" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#4E85FF" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowMint" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(194 782) rotate(-28) scale(420 240)">
+    <radialGradient id="mintGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(188 808) rotate(-20) scale(360 220)">
       <stop stop-color="#39C6A4" stop-opacity="0.22"/>
       <stop offset="1" stop-color="#39C6A4" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="panelStroke" x1="730" y1="104" x2="1312" y2="760" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#4C73B8"/>
-      <stop offset="1" stop-color="#2A436D"/>
+    <linearGradient id="panelStroke" x1="752" y1="108" x2="1298" y2="748" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4D79C8"/>
+      <stop offset="1" stop-color="#2A456F"/>
     </linearGradient>
-    <linearGradient id="connector" x1="958" y1="260" x2="1096" y2="621" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6EA2FF"/>
-      <stop offset="1" stop-color="#7BE5C0"/>
+    <linearGradient id="connector" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#74A8FF"/>
+      <stop offset="1" stop-color="#7CE3C1"/>
     </linearGradient>
-    <filter id="shadow" x="698" y="80" width="648" height="688" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="panelShadow" x="708" y="70" width="664" height="716" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-      <feOffset dy="18"/>
-      <feGaussianBlur stdDeviation="16"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 0.0109 0 0 0 0 0.0416 0 0 0 0 0.1041 0 0 0 0.24 0"/>
+      <feOffset dy="24"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0157 0 0 0 0 0.051 0 0 0 0 0.1255 0 0 0 0.28 0"/>
       <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
-    </filter>
-    <filter id="soft" x="0" y="0" width="1400" height="860" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feGaussianBlur stdDeviation="36"/>
     </filter>
   </defs>
 
   <rect width="1400" height="860" rx="36" fill="url(#bg)"/>
-  <circle cx="1180" cy="112" r="280" fill="url(#glowBlue)" filter="url(#soft)"/>
-  <circle cx="194" cy="782" r="220" fill="url(#glowMint)" filter="url(#soft)"/>
+  <circle cx="1188" cy="108" r="260" fill="url(#blueGlow)"/>
+  <circle cx="188" cy="808" r="220" fill="url(#mintGlow)"/>
 
-  <g opacity="0.18">
-    <path d="M756 0V860" stroke="#7EA3E6"/>
-    <path d="M856 0V860" stroke="#7EA3E6"/>
-    <path d="M956 0V860" stroke="#7EA3E6"/>
-    <path d="M1056 0V860" stroke="#7EA3E6"/>
-    <path d="M1156 0V860" stroke="#7EA3E6"/>
-    <path d="M1256 0V860" stroke="#7EA3E6"/>
-    <path d="M0 134H1400" stroke="#7EA3E6"/>
-    <path d="M0 234H1400" stroke="#7EA3E6"/>
-    <path d="M0 334H1400" stroke="#7EA3E6"/>
-    <path d="M0 434H1400" stroke="#7EA3E6"/>
-    <path d="M0 534H1400" stroke="#7EA3E6"/>
-    <path d="M0 634H1400" stroke="#7EA3E6"/>
-    <path d="M0 734H1400" stroke="#7EA3E6"/>
-  </g>
+  <path d="M0 132H1400" stroke="#7EA3E6" stroke-opacity="0.12"/>
+  <path d="M0 734H1400" stroke="#7EA3E6" stroke-opacity="0.10"/>
+  <path d="M1014 0V860" stroke="#7EA3E6" stroke-opacity="0.08"/>
+  <path d="M1122 0V860" stroke="#7EA3E6" stroke-opacity="0.08"/>
+  <path d="M1230 0V860" stroke="#7EA3E6" stroke-opacity="0.08"/>
 
-  <rect x="76" y="76" width="206" height="48" rx="24" fill="#152B4C" stroke="#3866B6"/>
-  <text x="179" y="107" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="21" fill="#9BC0FF">PUBLIC SHOWCASE</text>
+  <rect x="82" y="76" width="258" height="50" rx="25" fill="#122847" stroke="#3A67B7" stroke-width="1.5"/>
+  <text x="211" y="108" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="600" letter-spacing="1.4" fill="#A9C5FF">PUBLIC SHOWCASE</text>
 
-  <text x="76" y="214" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="74" font-weight="700" fill="#F5F8FF">
-    <tspan x="76" dy="0">Scale-Driven Clinical</tspan>
-    <tspan x="76" dy="84">Interview Agent</tspan>
+  <text x="82" y="210" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="76" font-weight="700" fill="#F5F8FF">
+    <tspan x="82" dy="0">Clinical Interview</tspan>
+    <tspan x="82" dy="84">Agent</tspan>
   </text>
 
-  <text x="78" y="386" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="26" fill="#BECAE1">
-    <tspan x="78" dy="0">HAMD / HAMA / MINI workflows with dual-agent question control,</tspan>
-    <tspan x="78" dy="38">sufficiency-aware follow-up, and structured records.</tspan>
+  <text x="84" y="404" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" fill="#C4D0E5">
+    <tspan x="84" dy="0">Scale-driven workflow for structured interviews</tspan>
+    <tspan x="84" dy="36">with dual-agent control, follow-up policy,</tspan>
+    <tspan x="84" dy="36">and structured records.</tspan>
   </text>
 
-  <rect x="78" y="474" width="256" height="60" rx="20" fill="#152846" stroke="#3B6BBE"/>
-  <text x="206" y="512" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="22" fill="#F5F8FF">patient intake -&gt; scales</text>
+  <rect x="84" y="522" width="218" height="60" rx="20" fill="#13294B" stroke="#4D7EDC" stroke-width="1.5"/>
+  <text x="193" y="560" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" fill="#F5F8FF">HAMD / HAMA / MINI</text>
 
-  <rect x="350" y="474" width="252" height="60" rx="20" fill="#14332E" stroke="#27896F"/>
-  <text x="476" y="512" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="22" fill="#F5F8FF">interviewer + evaluator</text>
+  <rect x="318" y="522" width="252" height="60" rx="20" fill="#14332D" stroke="#2F9D7E" stroke-width="1.5"/>
+  <text x="444" y="560" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" fill="#F5F8FF">dual-agent follow-up</text>
 
-  <rect x="78" y="548" width="286" height="60" rx="20" fill="#3B2A17" stroke="#B6843B"/>
-  <text x="221" y="586" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="22" fill="#F5F8FF">structured output schema</text>
+  <rect x="84" y="600" width="232" height="60" rx="20" fill="#352717" stroke="#C18D45" stroke-width="1.5"/>
+  <text x="200" y="638" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" fill="#F5F8FF">structured records</text>
 
-  <text x="78" y="704" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="21" fill="#8FB8FF">agent design  .  follow-up policy  .  score-ready records</text>
+  <path d="M84 724H610" stroke="#82A7E8" stroke-opacity="0.28" stroke-width="1.5"/>
+  <text x="84" y="762" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="22" fill="#90B6FF">intake -&gt; scales -&gt; interview loop -&gt; schema</text>
 
-  <g filter="url(#shadow)">
-    <rect x="722" y="94" width="602" height="642" rx="32" fill="#101B31" fill-opacity="0.84" stroke="url(#panelStroke)" stroke-width="2"/>
+  <g filter="url(#panelShadow)">
+    <rect x="744" y="92" width="588" height="660" rx="34" fill="#0F1C33" fill-opacity="0.88" stroke="url(#panelStroke)" stroke-width="2"/>
   </g>
 
-  <text x="770" y="144" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="20" fill="#7EA3E6">SYSTEM SNAPSHOT</text>
-  <text x="1178" y="144" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="18" text-anchor="end" fill="#77DAB9">public repo slice</text>
+  <text x="790" y="144" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="18" font-weight="600" letter-spacing="0.6" fill="#94B7FF">INTERVIEW FLOW</text>
+  <rect x="1152" y="114" width="132" height="34" rx="17" fill="#132847" stroke="#345C9F" stroke-width="1.2"/>
+  <text x="1218" y="136" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="15" fill="#8EE3C5">public repo</text>
 
-  <rect x="760" y="174" width="156" height="104" rx="22" fill="#13294B" stroke="#4B7DDA" stroke-width="2"/>
-  <circle cx="792" cy="206" r="10" fill="#7FA7FF"/>
-  <rect x="808" y="198" width="68" height="8" rx="4" fill="#7FA7FF"/>
-  <rect x="792" y="222" width="90" height="8" rx="4" fill="#3D5E96"/>
-  <text x="792" y="258" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#F5F8FF">Patient Intake</text>
+  <rect x="788" y="182" width="150" height="108" rx="24" fill="#13294B" stroke="#4A7CDA" stroke-width="2"/>
+  <circle cx="824" cy="214" r="10" fill="#7EA8FF"/>
+  <rect x="842" y="206" width="70" height="8" rx="4" fill="#7EA8FF"/>
+  <rect x="824" y="228" width="88" height="8" rx="4" fill="#43649C"/>
+  <text x="824" y="262" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" fill="#F5F8FF">Intake</text>
+  <text x="824" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" fill="#C3D6FF">history + profile</text>
 
-  <rect x="944" y="174" width="156" height="104" rx="22" fill="#14322C" stroke="#2C9779" stroke-width="2"/>
-  <circle cx="976" cy="206" r="10" fill="#69D8B6"/>
-  <rect x="992" y="198" width="64" height="8" rx="4" fill="#69D8B6"/>
-  <rect x="976" y="222" width="96" height="8" rx="4" fill="#37695E"/>
-  <text x="976" y="258" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#F5F8FF">Scale Path</text>
+  <rect x="964" y="182" width="150" height="108" rx="24" fill="#14332D" stroke="#2D9A7B" stroke-width="2"/>
+  <circle cx="1000" cy="214" r="10" fill="#74DBBA"/>
+  <rect x="1018" y="206" width="68" height="8" rx="4" fill="#74DBBA"/>
+  <rect x="1000" y="228" width="84" height="8" rx="4" fill="#38695F"/>
+  <text x="1000" y="262" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" fill="#F5F8FF">Scales</text>
+  <text x="1000" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" fill="#D0EFE3">HAMD / HAMA / MINI</text>
 
-  <rect x="1128" y="174" width="156" height="104" rx="22" fill="#3B2818" stroke="#C18B3F" stroke-width="2"/>
-  <circle cx="1160" cy="206" r="10" fill="#F0BE6B"/>
-  <rect x="1176" y="198" width="62" height="8" rx="4" fill="#F0BE6B"/>
-  <rect x="1160" y="222" width="92" height="8" rx="4" fill="#7F5D2C"/>
-  <text x="1160" y="258" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#F5F8FF">Question Plan</text>
+  <rect x="1140" y="182" width="150" height="108" rx="24" fill="#352717" stroke="#C08B43" stroke-width="2"/>
+  <circle cx="1176" cy="214" r="10" fill="#F0BF72"/>
+  <rect x="1194" y="206" width="70" height="8" rx="4" fill="#F0BF72"/>
+  <rect x="1176" y="228" width="86" height="8" rx="4" fill="#7B5C33"/>
+  <text x="1176" y="262" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" fill="#F5F8FF">Questions</text>
+  <text x="1176" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" fill="#F0DEC3">local JSON plan</text>
 
-  <path d="M838 278V314" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M1022 278V314" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M1206 278V314" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M838 314H1206" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="1022" cy="314" r="8" fill="#7DAEF8"/>
+  <path d="M863 290V328H1215V290" stroke="url(#connector)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1039" cy="328" r="8" fill="#86B3FF"/>
+  <path d="M1039 328V356" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
 
-  <rect x="780" y="336" width="486" height="214" rx="26" fill="#111F39" stroke="#4A73BC" stroke-width="2"/>
-  <text x="816" y="378" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="20" fill="#9BC0FF">DUAL-AGENT ORCHESTRATION</text>
+  <rect x="796" y="362" width="484" height="230" rx="28" fill="#132340" stroke="#4A76C0" stroke-width="2"/>
+  <text x="832" y="404" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="20" font-weight="600" fill="#A9C4FF">DUAL-AGENT LOOP</text>
 
-  <rect x="814" y="402" width="196" height="104" rx="22" fill="#16345F" stroke="#5A8FF7" stroke-width="2"/>
-  <text x="844" y="440" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="26" font-weight="600" fill="#F5F8FF">Interviewer</text>
-  <text x="844" y="474" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="18" fill="#C1D6FF">next best question</text>
+  <rect x="830" y="430" width="182" height="108" rx="24" fill="#17345F" stroke="#5A90F8" stroke-width="2"/>
+  <text x="860" y="468" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#F5F8FF">Interviewer</text>
+  <text x="860" y="495" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#D1E0FF">asks the next best turn</text>
 
-  <rect x="1036" y="402" width="196" height="104" rx="22" fill="#163830" stroke="#46B795" stroke-width="2"/>
-  <text x="1066" y="440" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="26" font-weight="600" fill="#F5F8FF">Evaluator</text>
-  <text x="1066" y="474" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="18" fill="#C8EBDD">answer sufficiency</text>
+  <rect x="1064" y="430" width="182" height="108" rx="24" fill="#173A32" stroke="#48BA97" stroke-width="2"/>
+  <text x="1094" y="468" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="27" font-weight="700" fill="#F5F8FF">Evaluator</text>
+  <text x="1094" y="495" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" fill="#D8EFE6">checks answer sufficiency</text>
 
-  <path d="M1010 454H1036" stroke="#7AD6B6" stroke-width="4" stroke-linecap="round"/>
-  <path d="M1024 444L1038 454L1024 464" stroke="#7AD6B6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="922" y="518" width="190" height="20" rx="10" fill="#172A4C"/>
-  <text x="1017" y="532" text-anchor="middle" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="13" fill="#A8C6FF">probe more  /  advance  /  close</text>
+  <path d="M1012 484H1064" stroke="#7BE0C0" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1046 470L1062 484L1046 498" stroke="#7BE0C0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <path d="M1022 550V580" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
-  <circle cx="1022" cy="580" r="8" fill="#7DAEF8"/>
-  <path d="M862 580H1180" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M862 580V598" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
-  <path d="M1180 580V598" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <rect x="928" y="552" width="224" height="22" rx="11" fill="#162A4A"/>
+  <text x="1040" y="567" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="13" fill="#ABC9FF">probe more / advance / close</text>
 
-  <rect x="780" y="612" width="212" height="92" rx="22" fill="#172D4F" stroke="#4C7CDD" stroke-width="2"/>
-  <text x="812" y="648" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="24" font-weight="600" fill="#F5F8FF">Voice Runtime</text>
-  <text x="812" y="674" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="15" fill="#BFD2F4">VAD / ASR / TTS</text>
-  <path d="M812 690C820 690 820 662 828 662C836 662 836 702 844 702C852 702 852 676 860 676C868 676 868 694 876 694C884 694 884 686 892 686C900 686 900 698 908 698C916 698 916 680 924 680C932 680 932 690 940 690" stroke="#8CB3FF" stroke-width="3" stroke-linecap="round"/>
+  <path d="M1040 592V620" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="1040" cy="620" r="8" fill="#86B3FF"/>
+  <path d="M874 620H1208" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M874 620V648" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1208 620V648" stroke="url(#connector)" stroke-width="4" stroke-linecap="round"/>
 
-  <rect x="1012" y="612" width="254" height="92" rx="22" fill="#2F261A" stroke="#C79247" stroke-width="2"/>
-  <text x="1044" y="648" font-family="'Avenir Next', 'Segoe UI', sans-serif" font-size="24" font-weight="600" fill="#F5F8FF">Structured Output</text>
-  <text x="1044" y="674" font-family="'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace" font-size="14" fill="#F3DDBA">score-ready schema</text>
-  <rect x="1164" y="632" width="72" height="18" rx="9" fill="#3F301D"/>
-  <rect x="1044" y="688" width="124" height="6" rx="3" fill="#D6B077"/>
-  <rect x="1174" y="688" width="48" height="6" rx="3" fill="#8F6A39"/>
+  <rect x="796" y="654" width="214" height="70" rx="24" fill="#13294B" stroke="#4B7CDA" stroke-width="2"/>
+  <text x="826" y="689" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#F5F8FF">Voice Runtime</text>
+  <text x="826" y="709" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="15" fill="#C5D8FF">VAD / ASR / TTS</text>
 
+  <rect x="1070" y="654" width="210" height="70" rx="24" fill="#352717" stroke="#C08B43" stroke-width="2"/>
+  <text x="1100" y="689" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#F5F8FF">Structured Output</text>
+  <text x="1100" y="709" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="15" fill="#F0DFC4">schema-aligned record</text>
 </svg>
