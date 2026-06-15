@@ -2,6 +2,8 @@
 
 Public showcase of a scale-driven AI interviewer for structured mental-health assessments, combining dual-agent interview design with an interruption-aware voice runtime.
 
+> Public showcase only. This repository is not a clinical diagnostic tool, medical device, therapy product, or mental-health assessment service.
+
 ![Repository hero](assets/readme/repo-hero-cover.png)
 
 This repository highlights:
