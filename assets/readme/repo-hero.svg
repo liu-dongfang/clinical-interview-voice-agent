@@ -52,15 +52,15 @@
 
   <text x="84" y="404" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" fill="#C4D0E5">
     <tspan x="84" dy="0">Scale-driven workflow for structured interviews</tspan>
-    <tspan x="84" dy="36">with dual-agent control, follow-up policy,</tspan>
+    <tspan x="84" dy="36">with runtime control, scripted follow-up,</tspan>
     <tspan x="84" dy="36">and structured records.</tspan>
   </text>
 
   <rect x="84" y="522" width="218" height="60" rx="20" fill="#13294B" stroke="#4D7EDC" stroke-width="1.5"/>
-  <text x="193" y="559" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="600" fill="#F5F8FF">HAMD / HAMA / MINI</text>
+  <text x="193" y="559" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="600" fill="#F5F8FF">scripted interview</text>
 
   <rect x="318" y="522" width="252" height="60" rx="20" fill="#14332D" stroke="#2F9D7E" stroke-width="1.5"/>
-  <text x="444" y="559" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="600" fill="#F5F8FF">dual-agent follow-up</text>
+  <text x="444" y="559" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="19" font-weight="600" fill="#F5F8FF">scripted follow-up</text>
 
   <rect x="84" y="600" width="232" height="60" rx="20" fill="#352717" stroke="#C18D45" stroke-width="1.5"/>
   <text x="200" y="638" text-anchor="middle" font-family="'SFMono-Regular', 'SF Mono', Menlo, Consolas, monospace" font-size="21" font-weight="600" fill="#F5F8FF">structured records</text>
@@ -88,7 +88,7 @@
   <rect x="1018" y="206" width="68" height="8" rx="4" fill="#74DBBA"/>
   <rect x="1000" y="228" width="84" height="8" rx="4" fill="#38695F"/>
   <text x="1000" y="262" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="700" fill="#F5F8FF">Scales</text>
-  <text x="1000" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#D0EFE3">HAMD / HAMA / MINI</text>
+  <text x="1000" y="282" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#D0EFE3">scripted interview</text>
 
   <rect x="1140" y="182" width="150" height="108" rx="24" fill="#352717" stroke="#C08B43" stroke-width="2"/>
   <circle cx="1176" cy="214" r="10" fill="#F0BF72"/>
