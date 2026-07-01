@@ -4,7 +4,7 @@ Use the following repository metadata when publishing this project:
 
 ## About
 
-Scale-driven AI interviewer for HAMD / HAMA / MINI-style assessments, with dual-agent orchestration, sufficiency-aware follow-up, and an interruption-aware voice runtime.
+Interruptible voice-agent runtime for structured interview prototypes, with VAD-based interruption handling and modular ASR / LLM / TTS / playback boundaries.
 
 ## Topics
 

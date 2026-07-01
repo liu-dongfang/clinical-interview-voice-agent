@@ -1,21 +1,21 @@
 # clinical-interview-voice-agent
 
-Public showcase of a scale-driven AI interviewer for structured mental-health assessments, combining dual-agent interview design with an interruption-aware voice runtime.
+Public showcase of an interruptible voice-agent runtime for structured interview prototypes, with VAD-based interruption handling and modular speech backends.
 
 > Public showcase only. This repository is not a clinical diagnostic tool, medical device, therapy product, or mental-health assessment service.
 
-![Repository hero](assets/readme/repo-hero-cover.png)
+![Repository preview](assets/social-preview.png)
 
 This repository highlights:
-- Patient intake / history -> scale selection -> JSON-backed question sequencing
-- Dual-agent orchestration between the interviewing agent and an answer-sufficiency evaluator
 - Interruption-aware voice runtime with swappable STT / LLM / TTS / VAD / playback backends
+- VAD-based interruption handling while assistant playback is active
+- Lightweight scripted assessment example layered on top of the voice-agent runtime
 
-**Demo:** [Watch 55s legacy mobile demo](docs/demo/voice-mobile-demo-55s.mp4) · [Read architecture notes](docs/architecture.md) · [See interface screenshots](#interface)
+**Demo:** [Watch 55s legacy mobile demo](docs/demo/voice-mobile-demo-55s.mp4) | [Read architecture notes](docs/architecture.md) | [See interface screenshots](#interface)
 
 ## Overview
 
-`clinical-interview-voice-agent` is the public-facing engineering slice of a larger structured interview prototype. The core workflow represented here is a scale-driven mental-health interview system: patient intake and history collection, assessment selection, question sequencing from local JSON definitions, and dual-agent coordination between asking questions and judging whether an answer is sufficient.
+`clinical-interview-voice-agent` is the public-facing engineering slice of a larger structured interview prototype. The code represented here is focused on the reusable voice runtime: audio input, VAD-based interruption handling, backend abstraction, dialogue state, streaming LLM output, TTS, playback, and a small scripted assessment example.
 
 To keep the demo runnable end to end, the repository also includes the surrounding speech stack: audio input, VAD-based interruption handling, ASR / LLM / TTS backend abstraction, dialogue orchestration, and a thin service layer for UI integration.
 
@@ -44,19 +44,19 @@ At a high level:
 
 ## What This Repository Demonstrates
 
-- HAMD / HAMA / MINI-style structured interview flow design
-- Local JSON-driven question sequencing and sufficiency-aware follow-up
+- Interruptible voice-agent runtime for structured interview prototypes
+- Local JSON-driven scripted assessment example
 - Interruption-aware dialogue control instead of rigid turn-taking
 - Clear backend boundaries across recorder, VAD, ASR, LLM, TTS, and playback
 - A small service bridge in [`server/server.py`](server/server.py) for timeline inspection and UI integration
 
 ## What I Owned
 
-- Agent design for a scale-driven mental-health interviewer covering patient intake / history, assessment selection, and question sequencing
-- Dual-agent workflow in which one agent conducts the interview and another evaluates answer sufficiency before the system advances
-- Follow-up strategy for incomplete answers, so the interviewer probes when needed instead of only moving linearly through a script
-- Schema-aligned structured outputs that can support downstream scoring, reporting, and replay-based evaluation
-- The repository also contains speech, app-shell, and integration code required to run the public demo; those pieces are included for completeness but were not my primary implementation ownership
+- Voice-agent runtime boundaries across recorder, VAD, ASR, LLM, TTS, and playback
+- VAD-triggered interruption path that stops playback and resets VAD state when user speech is detected
+- Dialogue-state wrapper and streaming response path in [`bailing/voice_agent.py`](bailing/voice_agent.py)
+- Lightweight scripted assessment example showing how a structured flow can sit above the runtime
+- Public showcase packaging, architecture notes, screenshots, and runnable dry-run defaults
 
 ## Quickstart
 
@@ -85,4 +85,6 @@ Notes:
 
 - This is still an engineering prototype, not a production-ready realtime speech stack.
 - Interruption quality depends on VAD thresholds, audio device behavior, and backend latency.
+- The public code does not implement a separate evaluator agent or multi-agent orchestration layer.
+- The scripted assessment file is a lightweight placeholder example, not a validated clinical assessment workflow.
 - The repository intentionally excludes large model weights, internal prompts, logs, certificates, and unpublished research materials.
